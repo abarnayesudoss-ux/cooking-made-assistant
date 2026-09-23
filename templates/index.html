@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Mate Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chatbot">
+
+    <div class="chat-header">
+        👨‍🍳 Cooking Mate Assistant
+    </div>
+
+    <div class="chat-box" id="chatBox">
+
+        <div class="bot-message">
+            Hello! 👋<br><br>
+            I'm your Cooking Mate Assistant. 🍳<br>
+            Ask me for recipes, ingredients, or cooking tips!
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ask me about cooking..."
+            onkeypress="handleKey(event)"
+        >
+
+        <button onclick="sendMessage()">Send</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
